@@ -1,0 +1,202 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*:focus {
+  outline-color: #b85900;
+  outline: 3px dashed #b85900;
+}
+
+.skip-link {
+  left: -10000px;
+  position: absolute;
+  padding: 10px 40px;
+  border-radius: 40px;
+}
+
+.skip-link:focus {
+  left: 50%;
+  top: 20px;
+  background-color: #062d3e;
+  color: #fff;
+  outline-color: #b85900;
+}
+
+body {
+  font-family: "Prompt", sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #fffdf0;
+  font-size: 1em;
+}
+
+.body-text {
+  font-size: 2em;
+  color: #555555;
+}
+
+body.home a.home,
+body.about a.about,
+body.ship a.ship,
+body.routes a.routes,
+body.contact a.contact {
+  border-bottom: 6px solid #b85900;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 4em 2em 0 2em;
+  gap: 40px;
+  justify-content: center;
+}
+
+.site-info {
+  display: flex;
+  flex-basis: 50%;
+}
+
+.site-stats {
+  display: flex;
+  flex-basis: 40%;
+  justify-content: center;
+}
+
+div.site-stats-container > div {
+  display: flex;
+  align-items: center;
+  margin-bottom: 3em;
+  padding: 2em;
+}
+
+.site-info-container {
+  text-align: center;
+}
+
+div.site-info-container h1 {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.site-stats-container {
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.stat-number {
+  color: #b85900;
+  font-weight: 700;
+  font-size: 3em;
+  margin-right: 0.5em;
+}
+
+.stat-description {
+  color: #062d3e;
+  font-size: 2em;
+  font-weight: 600;
+}
+
+nav {
+  margin: 2em 3em;
+}
+
+#nav-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  color: #062d3e;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+}
+
+.nav-links {
+  font-size: 1.75em;
+  font-weight: 500;
+  padding: 0 24px;
+}
+
+.nav-links a {
+  color: #062d3e;
+  text-decoration: none;
+}
+
+.nav-links a:hover {
+  color: #b85900;
+}
+
+label {
+  font-size: 26px;
+  margin: 0;
+  display: none;
+}
+
+#toggle {
+  display: none;
+}
+
+#toggle:checked ~ ul#nav-links {
+  display: flex;
+}
+
+.logo {
+  height: auto;
+}
+
+.book-button {
+  background-color: #062d3e;
+  color: #ffffff;
+  padding: 0.75em 3em;
+  border-radius: 40px;
+  font-size: 2em;
+  font-weight: 600;
+  margin-top: 1em;
+}
+
+footer {
+  background-color: #cafaca;
+  height: 220px;
+  margin-top: auto;
+  position: relative;
+}
+
+.footer-floor {
+  background-image: url("../img/dog-cat.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  overflow-y: visible;
+  position: absolute;
+  height: 400px;
+  width: 100%;
+  bottom: 50px;
+  background-size: 400px;
+}
+
+h2 {
+  color: #062d3e;
+  margin-bottom: 0.5em;
+}
+
+p {
+  color: #555555;
+  font-size: 1.25em;
+  margin-bottom: 0.75em;
+  line-height: 1.75em;
+}
+
+section#about-page {
+  max-width: 800px;
+  margin: 20px auto 200px auto;
+  background-color: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+

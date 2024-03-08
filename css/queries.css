@@ -1,0 +1,99 @@
+/* ========
+   2XL 
+   ======== */
+@media only screen and (max-width: 1536px) {
+    .site-info {
+      flex-basis: 100%;
+    }
+  
+    .site-stats {
+      flex-basis: 100%;
+      margin-top: 2em;
+    }
+  
+    main {
+      margin: 4em 2em 8em 2em;
+    }
+  }
+  
+  /* ========
+   LARGE 
+   ======== */
+  @media only screen and (max-width: 992px) {
+    .nav-links {
+      padding: 0 12px;
+      font-size: 1.6em;
+    }
+  
+    .body-text {
+      font-size: 1.6em;
+    }
+  
+    nav {
+      margin: 2em 1.5em;
+    }
+  }
+  
+  /* ========
+   MEDIUM 
+   ======== */
+  @media only screen and (max-width: 768px) {
+    #toggle:checked ~ ul#nav-links {
+      position: absolute;
+      left: 0;
+      width: 100%;
+    }
+  
+    nav ul {
+      flex-direction: column;
+      z-index: 99999;
+      width: 100%;
+    }
+  
+    ul#nav-links {
+      display: none;
+    }
+  
+    .nav-links {
+      font-size: 1.5em;
+      font-weight: 400;
+      padding: 0 13px;
+      width: 100%;
+      background-color: white;
+      border-bottom: 1px solid gainsboro;
+      padding: 7px 0;
+      text-align: center;
+    }
+  
+    label {
+      display: block;
+      cursor: pointer;
+      font-size: 2.75em;
+    }
+  }
+  
+  /* ========
+   SMALL 
+   ======== */
+  @media only screen and (max-width: 480px) {
+    div.site-info-container h1 {
+      width: 90%;
+    }
+  
+    .body-text {
+      font-size: 1.5em;
+    }
+  
+    .book-button {
+      padding: 0.5em 2em;
+    }
+  
+    main {
+      margin: 1em 2em 10em 2em;
+    }
+  
+    div.site-stats-container > div {
+      margin-bottom: 1em;
+    }
+  }
+  
